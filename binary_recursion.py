@@ -1,13 +1,15 @@
 def binary_search(arr,n,low,high,key):
-  while(low <= high):
     mid = (low + high) // 2
+    if(low > high)
+       Return 0
     if(arr[mid] == key):
       return mid+1
     elif(arr[mid] < key):
       low = mid+1
-    else:
+    elif(arr[mid > key):
       high = mid-1
-  return -1
+    else:
+      return binary_search(arr,n,low,high,key)
 n = int(input("enter number of array elements"))
 print("enter array elements")
 arr = []
@@ -18,9 +20,9 @@ arr.sort()
 print(arr)
 key = int(input("enter search key"))
 ans = binary_search(arr,n,0,n-1,key)
-if(ans == -1):
- print("element not found")
+if(ans!=0):
+ print("element found at position"ans)
 else:
- print("element found at position:",ans)
+ print("element not found)
 
 
